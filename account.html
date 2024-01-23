@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/common.css" rel="stylesheet">
+    <link href="style/account.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.0.0-alpha5/bootstrap-icons.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/common.js"></script>
+    <div id="content">
+        <div class="account">
+            <div class="account-top">
+                <!-- 設定ボタン -->
+                <button class="btn" onclick="location.href=''">
+                    <svg aria-label="オプション" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img"
+                        viewBox="0 0 24 24" width="24">
+                        <title>オプション</title>
+                        <circle cx="12" cy="12" fill="none" r="8.635" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"></circle>
+                        <path
+                            d="M14.232 3.656a1.269 1.269 0 0 1-.796-.66L12.93 2h-1.86l-.505.996a1.269 1.269 0 0 1-.796.66m-.001 16.688a1.269 1.269 0 0 1 .796.66l.505.996h1.862l.505-.996a1.269 1.269 0 0 1 .796-.66M3.656 9.768a1.269 1.269 0 0 1-.66.796L2 11.07v1.862l.996.505a1.269 1.269 0 0 1 .66.796m16.688-.001a1.269 1.269 0 0 1 .66-.796L22 12.93v-1.86l-.996-.505a1.269 1.269 0 0 1-.66-.796M7.678 4.522a1.269 1.269 0 0 1-1.03.096l-1.06-.348L4.27 5.587l.348 1.062a1.269 1.269 0 0 1-.096 1.03m11.8 11.799a1.269 1.269 0 0 1 1.03-.096l1.06.348 1.318-1.317-.348-1.062a1.269 1.269 0 0 1 .096-1.03m-14.956.001a1.269 1.269 0 0 1 .096 1.03l-.348 1.06 1.317 1.318 1.062-.348a1.269 1.269 0 0 1 1.03.096m11.799-11.8a1.269 1.269 0 0 1-.096-1.03l.348-1.06-1.317-1.318-1.062.348a1.269 1.269 0 0 1-1.03-.096"
+                            fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+                <!-- 通知ボタン -->
+                <button class="btn btn-notification">
+                    <svg aria-label="通知" fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
+                        <path
+                            d="M12 22c1.1 0 2-.9 2-2H10c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10 3.17 10 4v.68C7.24 5.36 5.6 7.92 5.6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 3.5-4.5s3.5 2.02 3.5 4.5v6z" />
+                    </svg>
+                </button>
+
+
+
+            </div>
+            <div class="account-details">
+                <div class="account_image">
+                    <img src="image/accountButton_click.png">
+                </div>
+                <div class="social_info">
+                    <p>アカウント太郎</p>
+                    <p>フォロワー数: <span id="follower_count">46人</span></p>
+                    <p>フォロー数: <span id="following_count">3人</span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="account_service">
+                <p>サービス</p>
+                <a href="https://apps.apple.com/jp/app/%E4%BC%9A%E6%B4%A5%E8%B2%A1%E5%B8%83/id1524253701?l=en-US">
+                    <img src="image/aizucoin.png">
+                </a>
+            </div>
+            <hr>
+            <div class="post_gallery">
+                <img
+                    src="https://www.aizukanko.com/image/rendering/attraction_image/2103/keep/800/540?v=ec80218139e867d2cbbb9a8c58fa0df0be83f90f">
+                <img src="https://web-ext.u-aizu.ac.jp/circles/triathlon/image/profile/profile.png">
+                <img src="https://web-ext.u-aizu.ac.jp/circles/triathlon/image/profile/profile.png">
+            </div>
+        </div>
+        <div id="notificationPanel" class="notification-panel">
+            <h4>通知</h4>
+            <p>今日</p>
+            <p>新しい投稿が完了しました。</p>
+            <hr>
+            <p>昨日</p>
+            <p>お気に入り登録した場所で新しい投稿がありました。</p>
+            <hr>
+            <p>1週間前</p>
+            <p>あなたの投稿が1000View & 50いいねを超えました。会津コインを付与しました。</p>
+            <a href="#">確認する</a>
+            <hr>
+            <br>
+            <button class="close-button">閉じる</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="tab-bar" id="tab-bar">
+            <div class="tab-item">
+                <a href="index.html"><img src="image/mapButton.png"></a>
+            </div>
+            <div class="tab-item">
+                <a href="search.html"><img src="image/searchButton.png"></a>
+            </div>
+            <div class="tab-item">
+                <a href="info.html"><img src="image/infoButton.png"></a>
+            </div>
+            <div class="tab-item">
+                <a href="post.html"><img src="image/postButton.png"></a>
+            </div>
+            <div class="tab-item">
+                <a href=""><img src="image/accountButton_click.png"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var notificationButton = document.querySelector('.btn-notification');
+            var notificationPanel = document.getElementById('notificationPanel');
+            var isNotificationPanelOpen = false;
+
+            notificationButton.addEventListener('click', function (event) {
+                notificationPanel.style.display = 'block';
+                isNotificationPanelOpen = true;
+                event.stopPropagation();
+            });
+
+            var closeButton = document.querySelector('.close-button');
+            closeButton.addEventListener('click', function () {
+                notificationPanel.style.display = 'none';
+                isNotificationPanelOpen = false;
+            });
+
+            document.addEventListener('click', function (event) {
+                if (isNotificationPanelOpen) {
+                    if (!notificationPanel.contains(event.target)) {
+                        notificationPanel.style.display = 'none';
+                        isNotificationPanelOpen = false;
+                    }
+                    event.preventDefault(); // 他のイベントのデフォルト動作を阻止
+                    event.stopPropagation(); // 他のイベントの伝播を停止
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
