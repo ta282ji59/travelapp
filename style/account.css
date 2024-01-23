@@ -1,0 +1,91 @@
+.account {
+    text-align: center;
+}
+
+.account-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.account_image img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.account_service{
+    padding-left: 20px;
+    text-align: start;
+}
+
+.account_service img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.account-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_info {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.post_gallery img {
+    width: 120px;
+    height: 120px;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.notification-panel {
+    display: none; /* 初期状態では非表示 */
+    position: fixed; /* 画面の上部などに固定する */
+    top: 0;
+    right: 0;
+    width: 300px; /* 必要に応じて調整 */
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 5px;
+    /* アニメーションの設定 */
+    animation-name: fadeIn;
+    animation-duration: 0.2s; /* アニメーションの持続時間 */
+    animation-fill-mode: forwards; /* アニメーション終了時のスタイルを維持 */
+    overflow-y: auto; /* 垂直方向のスクロールを可能にする */
+    max-height: 100vh;
+    background-color: azure;
+}
+.notification-panel p{
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+.close-button {
+    position: absolute; /* 絶対位置指定 */
+    bottom: 10px; /* 下から10pxの位置 */
+    left: 50%; /* 左端から50%の位置 */
+    transform: translateX(-50%); /* X軸方向に自身の幅の50%分移動 */
+    /* 必要に応じて他のスタイルを追加 */
+}
+.close-button {
+    position: relative; /* 相対位置指定に変更 */
+    margin: 20px auto; /* 上下のマージンを設定し、中央に配置 */
+    left: 50%; /* 左端から50%の位置 */
+    transform: translateX(-50%);
+}
